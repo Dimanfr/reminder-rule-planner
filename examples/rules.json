@@ -1,0 +1,14 @@
+{
+  "timezone": "Europe/Berlin",
+  "rules": [
+    {"key": "insoles",        "keywords": ["einlagen", "insoles"],                         "days": 45},
+    {"key": "insoles_sport",  "keywords": ["sporteinlagen", "sport insoles"],              "days": 30},
+    {"key": "compression",    "keywords": ["kompressionsstrümpfe", "compression stockings"], "days": 180},
+    {"key": "service_check",  "keywords": ["rollator", "wartung", "service"],              "days": 365}
+  ],
+  "default_days": null,
+  "send_times": {"email": "10:00", "sms": "09:30", "whatsapp": "10:30", "letter": "08:30"},
+  "quiet_hours": {"start": "20:00", "end": "08:00"},
+  "no_send_weekdays": [5, 6],
+  "max_overdue_days": 14
+}

@@ -1,0 +1,31 @@
+{
+  "customers": [
+    {"customer_id": "C1", "preferred_channel": "email"},
+    {"customer_id": "C2", "preferred_channel": "sms"},
+    {"customer_id": "C3", "preferred_channel": "email"},
+    {"customer_id": "C4", "preferred_channel": "whatsapp"},
+    {"customer_id": "C5", "preferred_channel": "letter"}
+  ],
+  "consents": [
+    {"customer_id": "C1", "scope": "reminders", "status": "granted", "channels": ["email", "letter"]},
+    {"customer_id": "C2", "scope": "reminders", "status": "granted", "channels": ["sms"], "expires_on": "2027-06-30"},
+    {"customer_id": "C3", "scope": "reminders", "status": "granted", "expires_on": "2026-10-31"},
+    {"customer_id": "C4", "scope": "reminders", "status": "granted", "channels": ["email"]},
+    {"customer_id": "C5", "scope": "reminders", "status": "granted"}
+  ],
+  "purchases": [
+    {"purchase_id": "P1", "customer_id": "C1", "product": "Einlagen orthopädisch", "purchase_date": "2026-10-20"},
+    {"purchase_id": "P2", "customer_id": "C1", "product": "Sporteinlagen Laufen",  "purchase_date": "2026-10-20"},
+    {"purchase_id": "P3", "customer_id": "C2", "product": "Kompressionsstrümpfe",  "purchase_date": "2026-06-01"},
+    {"purchase_id": "P4", "customer_id": "C3", "product": "Einlagen",              "purchase_date": "2026-10-01"},
+    {"purchase_id": "P5", "customer_id": "C4", "product": "Rollator-Wartung",      "purchase_date": "2026-01-15"},
+    {"purchase_id": "P6", "customer_id": "C5", "product": "Einlagen",              "purchase_date": "2026-08-01"},
+    {"purchase_id": "P7", "customer_id": "C5", "product": "Gutschein",             "purchase_date": "2026-11-01"},
+    {"purchase_id": "P8", "customer_id": "C1", "product": "Insoles",               "purchase_date": "2026-09-01"},
+    {"purchase_id": "P9", "customer_id": "C2", "product": "Einlagen",              "purchase_date": "2026-09-30"}
+  ],
+  "existing": [
+    {"purchase_id": "P8", "rule_key": "insoles", "status": "sent",    "channel": "email", "send_at": "2026-10-16T10:00:00+02:00"},
+    {"purchase_id": "P9", "rule_key": "insoles", "status": "pending", "channel": "sms",   "send_at": "2026-11-13T09:00:00+01:00"}
+  ]
+}
